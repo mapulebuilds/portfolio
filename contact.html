@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Brightness Mapule Masilela</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="logo" data-page="Contact"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact container">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Let's collaborate</h3>
+                <p>I love partnering on thoughtful products, student initiatives, and mentorship opportunities. Tell me what you're exploring - I'll reply within two weekdays.</p>
+                <div class="contact-links">
+                    <a href="mailto:brightness.masilela@example.com" class="link-chip">Email</a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="link-chip">LinkedIn</a>
+                    <a href="https://github.com/" target="_blank" class="link-chip">GitHub</a>
+                </div>
+                <p class="contact-note">Prefer voice notes or a quick call? Mention it in your message and we'll set something up.</p>
+            </div>
+
+            <form class="contact-form" action="mailto:brightness.masilela@example.com" method="post" enctype="text/plain">
+                <label class="sr-only" for="contact-name">Your Name</label>
+                <input id="contact-name" type="text" name="name" placeholder="Your Name" required>
+                <label class="sr-only" for="contact-email">Your Email</label>
+                <input id="contact-email" type="email" name="email" placeholder="Your Email" required>
+                <label class="sr-only" for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your idea" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Brightness Mapule Masilela
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
