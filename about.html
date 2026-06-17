@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-wrap">
 
-    <!-- Navbar -->
+<div class="scene-3d" aria-hidden="true">
+    <div class="cube-3d">
+        <div class="face front"></div><div class="face back"></div><div class="face right"></div>
+        <div class="face left"></div><div class="face top"></div><div class="face bottom"></div>
+    </div>
+    <div class="cube-3d">
+        <div class="face front"></div><div class="face back"></div><div class="face right"></div>
+        <div class="face left"></div><div class="face top"></div><div class="face bottom"></div>
+    </div>
+    <div class="ring-3d"></div>
+    <div class="ring-3d"></div>
+</div>
+
     <nav>
         <div class="container">
-            <div class="logo" data-page="About"></div>
+            <div class="logo">Brightness</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,11 +35,14 @@
         </div>
     </nav>
 
-    <!-- About Section -->
     <section class="about container">
+        <div class="section-header">
+            <span class="section-label">About</span>
+            <h2>About Me</h2>
+            <p class="lead">A curious mind with a heart for people-centered software.</p>
+        </div>
         <div class="about-grid">
             <div class="about-story">
-                <h2>About Me</h2>
                 <p>I'm Brightness Mapule Masilela, a curious mind with a heart for people-centered software. Studying Computer Science at TUT has taught me the value of slow, deliberate learning and the joy of sharing discoveries with others.</p>
                 <p>Most days you'll find me sketching UI flows in my notebook, translating ideas into code, or helping classmates debug their Java assignments. I believe good software feels welcoming - like a thoughtful conversation, not a monologue.</p>
                 <div class="about-highlights">
@@ -64,5 +80,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+</div>
 </body>
 </html>

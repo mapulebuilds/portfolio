@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-wrap">
 
-    <!-- Navbar -->
+<div class="scene-3d" aria-hidden="true">
+    <div class="cube-3d">
+        <div class="face front"></div><div class="face back"></div><div class="face right"></div>
+        <div class="face left"></div><div class="face top"></div><div class="face bottom"></div>
+    </div>
+    <div class="cube-3d">
+        <div class="face front"></div><div class="face back"></div><div class="face right"></div>
+        <div class="face left"></div><div class="face top"></div><div class="face bottom"></div>
+    </div>
+    <div class="ring-3d"></div>
+    <div class="ring-3d"></div>
+</div>
+
     <nav>
         <div class="container">
-            <div class="logo" data-page="Contact"></div>
+            <div class="logo">Brightness</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,9 +35,12 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
     <section class="contact container">
-        <h2>Contact Me</h2>
+        <div class="section-header">
+            <span class="section-label">Connect</span>
+            <h2>Contact Me</h2>
+            <p class="lead">I love partnering on thoughtful products, student initiatives, and mentorship opportunities.</p>
+        </div>
         <div class="contact-grid">
             <div class="contact-card">
                 <h3>Let's collaborate</h3>
@@ -54,5 +70,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+</div>
 </body>
 </html>

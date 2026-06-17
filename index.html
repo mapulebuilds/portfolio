@@ -3,57 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brightness Mapule Masilela - Portfolio</title>
+    <title>Brightness Mapule Masilela — Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-        <div class="logo" data-page="Portfolio"></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+
+    <nav role="navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <section class="home container">
-        <div class="hero-layout">
-            <div class="hero-media">
-                <figure class="hero-photo">
-                    <img src="profiepic.jpeg" alt="Portrait of Brightness Mapule Masilela">
-                    <span class="hero-sticker">Let's build together</span>
-                </figure>
-                <ul class="hero-floating-words">
-                    <li data-word="Curiosity">Curiosity</li>
-                    <li data-word="Kindness">Kindness</li>
-                    <li data-word="Consistency">Consistency</li>
-                    <li data-word="Playfulness">Playfulness</li>
-                </ul>
-            </div>
-
-            <div class="hero-copy">
-                <span class="hero-intro">Hey, I'm Brightness</span>
-                <h1>Brightness Mapule Masilela</h1>
-                <p>Aspiring Software Engineer | Full Stack Web Developer | Computer Science Student at TUT</p>
-                <p class="hero-quote">"Turning ideas into reality through clean code and creativity."</p>
-                <div class="hero-actions">
-                    <a class="btn" href="projects.html">See my work</a>
-                    <a class="ghost-button" href="contact.html">Start a conversation</a>
+    <!-- ==================== HERO ==================== -->
+    <section id="home">
+        <div class="hero-scene">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1>Brightness Mapule Masilela</h1>
+                    <p class="hero-sub">Final-year Computer Science Diploma student learning full-stack development and building things that work.</p>
+                    <p class="hero-quote">Aspiring Software Developer / Engineer | Web Developer</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">See my work</a>
+                        <a href="assets/Brightness-Masilela-CV.pdf" target="_blank" class="btn-secondary">Download CV</a>
+                        <a href="#contact" class="btn-secondary">Get in touch</a>
+                    </div>
                 </div>
-                <div class="hero-note">
-                    <span class="hero-note-label">Currently</span>
-                    <p>Currently building projects and completing SheCodes Full Stack Bootcamp</p>
+
+                <div class="hero-image">
+                    <div class="photo-frame">
+                        <img src="profiepic.jpeg" alt="Portrait of Brightness Mapule Masilela">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="section-inner">
+            <span class="section-label reveal">About</span>
+            <h2 class="reveal">A bit about me</h2>
+            <div class="about-grid" style="margin-top: 2rem;">
+                <div class="about-text reveal">
+                    <p>I'm Brightness Masilela, a Computer Science student at Tshwane University of Technology with an interest in software development, web technologies, and database systems.</p>
+                    <p>I enjoy working on practical projects that help me improve my problem-solving skills and understand how real applications are built. I am comfortable learning new technologies, working with others, and explaining technical concepts clearly.</p>
+                    <p>As I continue growing in the tech field, my goal is to build clean, useful, and well-structured software while gaining real-world experience through internships, projects, and professional opportunities.</p>
+                </div>
+
+                <div class="about-side reveal">
+                    <div class="side-card">
+                        <h3>Currently into</h3>
+                        <ul class="about-list">
+                            <li>Building small projects to improve my coding and problem-solving skills.</li>
+                            <li>Upgrading my skills in Java, databases, web development, APIs, and AI.</li>
+                            <li>Studying AI Engineering and learning how AI can be used to build practical, useful solutions.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+        <div class="section-inner">
+            <span class="section-label reveal">Skills</span>
+            <h2 class="reveal">What I work with</h2>
+            <p class="lead reveal">Here are the tools and technologies I use most often in my projects.</p>
+
+            <div class="skills-grid" style="margin-top: 3rem;">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>I build interfaces that are accessible, responsive, and consistent.</p>
+                    <ul class="skill-tags">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span>{ }</span>
+                    </div>
+                    <h3>Backend</h3>
+                    <p>I write server-side code that is readable and easy to maintain.</p>
+                    <ul class="skill-tags">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <span>Git</span>
+                    </div>
+                    <h3>Tools &amp; Workflow</h3>
+                    <p>I keep projects organised with version control and good documentation.</p>
+                    <ul class="skill-tags">
+                        <li>Git &amp; GitHub</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects">
+        <div class="section-inner">
+            <span class="section-label reveal">Projects</span>
+            <h2 class="reveal">Things I've worked on</h2>
+            <p class="lead reveal">Course projects, team initiatives, and things I built to learn.</p>
+
+            <div class="projects-grid" style="margin-top: 3rem;">
+                <div class="project-card reveal">
+                    <span class="project-meta">2026</span>
+                    <h3>Ezasekasi Spaza Shop Management System</h3>
+                    <p>A full-featured web-based management system for spaza shops built with Flask and MySQL. Supports inventory management, point-of-sale, supplier coordination, credit customer tracking, and reporting. Developed as a team project at TUT.</p>
+                    <ul class="skill-tags">
+                        <li>Flask</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>HTML/CSS</li>
+                        <li>Jinja2</li>
+                    </ul>
+                    <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+                        <a href="https://github.com/mapulebuilds/EzasekasiSystem" target="_blank" class="btn-secondary btn-sm">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <span class="project-meta">2025</span>
+                    <h3>To-Do List App</h3>
+                    <p>A web-based task management app with priority levels, category filtering, and user authentication. Built as a practical project to improve front-end development and DOM manipulation skills.</p>
+                    <ul class="skill-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+                        <a href="https://github.com/mapulebuilds/To-do-list" target="_blank" class="btn-secondary btn-sm">GitHub</a>
+                        <a href="https://mapulebuilds.github.io/To-do-list/" target="_blank" class="btn-secondary btn-sm">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <span class="project-meta">2026</span>
+                    <h3>University Event Management System</h3>
+                    <p>A Java desktop application for managing university events. Users can add, view, edit, delete, and search events through a graphical interface built with Java Swing, with file-based data persistence.</p>
+                    <ul class="skill-tags">
+                        <li>Java</li>
+                        <li>Java Swing</li>
+                        <li>File I/O</li>
+                        <li>NetBeans</li>
+                    </ul>
+                    <div style="display:flex; gap:0.5rem; margin-top:1rem;">
+                        <a href="https://github.com/mapulebuilds/event_management_system" target="_blank" class="btn-secondary btn-sm">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+        <div class="section-inner">
+            <span class="section-label reveal">Contact</span>
+            <h2 class="reveal">Say hello</h2>
+            <p class="lead reveal">If you want to collaborate, talk about a project, or just say hi — I'd love to hear from you.</p>
+
+            <div class="contact-grid" style="margin-top: 3rem;">
+                <div class="contact-info reveal">
+                    <h3>Get in touch</h3>
+                    <p>I reply within a couple of days. If you prefer a quick call or voice note, just mention it in your message and we can set something up.</p>
+                    <div class="contact-links">
+                        <a href="mailto:brightnessmapule996@gmail.com" class="btn-secondary btn-sm">Email</a>
+                        <a href="https://www.linkedin.com/in/brightness-mapule-masilela-476987197/" target="_blank" class="btn-secondary btn-sm">LinkedIn</a>
+                        <a href="https://github.com/mapulebuilds" target="_blank" class="btn-secondary btn-sm">GitHub</a>
+                        <a href="assets/Brightness-Masilela-CV.pdf" target="_blank" class="btn-secondary btn-sm">Download CV</a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" action="mailto:brightnessmapule996@gmail.com" method="post" enctype="text/plain">
+                    <label class="sr-only" for="contact-name">Your Name</label>
+                    <input id="contact-name" type="text" name="name" placeholder="Your Name" required>
+                    <label class="sr-only" for="contact-email">Your Email</label>
+                    <input id="contact-email" type="email" name="email" placeholder="Your Email" required>
+                    <label class="sr-only" for="contact-message">Your Message</label>
+                    <textarea id="contact-message" name="message" rows="4" placeholder="Tell me about your idea" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        &copy; 2025 Brightness Mapule Masilela. All rights reserved.
+        &copy; 2025 Brightness Mapule Masilela
     </footer>
 
     <script src="js/script.js"></script>
