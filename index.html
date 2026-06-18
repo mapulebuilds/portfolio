@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="bg-shapes" aria-hidden="true">
+      <div class="bg-shape bg-shape--1"></div>
+      <div class="bg-shape bg-shape--2"></div>
+      <div class="bg-shape bg-shape--3"></div>
+    </div>
 
     <nav role="navigation">
         <a href="#home" class="active">Home</a>
@@ -18,6 +23,8 @@
 
     <!-- ==================== HERO ==================== -->
     <section id="home">
+        <div class="hero-glow hero-glow--blue"></div>
+        <div class="hero-glow hero-glow--purple"></div>
         <div class="hero-scene">
             <div class="hero-grid">
                 <div class="hero-copy">
@@ -211,6 +218,8 @@
         &copy; 2025 Brightness Mapule Masilela
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-background.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => observer.observe(el));
   }
 
-  // ─── 3D CARD TILT ───
+  // ─── 3D CARD TILT (ENHANCED) ───
 
   const tiltCards = document.querySelectorAll('.skill-card, .project-card, .side-card');
   tiltCards.forEach(card => {
@@ -32,13 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const rotateX = ((y - centerY) / centerY) * -4;
       const rotateY = ((x - centerX) / centerX) * 4;
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      const shadowX = ((x - centerX) / centerX) * 10;
+      const shadowY = ((y - centerY) / centerY) * 10;
+      card.style.boxShadow = `${shadowX}px ${shadowY}px 28px rgba(11, 165, 233, 0.12), 0 4px 12px rgba(0,0,0,0.06)`;
     });
     card.addEventListener('mouseleave', () => {
       card.style.transform = '';
+      card.style.boxShadow = '';
     });
   });
 
-  // ─── PROFILE IMAGE 3D TILT ───
+  // ─── PROFILE IMAGE 3D TILT (ENHANCED) ───
 
   const photoFrame = document.querySelector('.photo-frame');
   if (photoFrame) {
@@ -51,9 +55,27 @@ document.addEventListener('DOMContentLoaded', () => {
       const rotateY = ((x - centerX) / centerX) * 6;
       const rotateX = ((y - centerY) / centerY) * -6;
       photoFrame.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      const shadowX = ((x - centerX) / centerX) * 12;
+      const shadowY = ((y - centerY) / centerY) * 12;
+      photoFrame.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(11, 165, 233, 0.15)`;
     });
     photoFrame.addEventListener('mouseleave', () => {
       photoFrame.style.transform = '';
+      photoFrame.style.boxShadow = '';
+    });
+  }
+
+  // ─── HERO SCROLL PARALLAX ───
+
+  const heroCopy = document.querySelector('.hero-copy');
+  const heroImage = document.querySelector('.hero-image');
+  if (heroCopy && heroImage) {
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      if (scrolled < window.innerHeight) {
+        heroCopy.style.transform = `translateY(${scrolled * 0.06}px)`;
+        heroImage.style.transform = `translateY(${scrolled * 0.12}px)`;
+      }
     });
   }
 
