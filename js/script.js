@@ -1,5 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ─── TYPING ANIMATION ───
+
+  const typingHeading = document.querySelector('.typing-heading');
+  if (typingHeading) {
+    const textSpan = typingHeading.querySelector('.typing-text');
+    const cursor = typingHeading.querySelector('.typing-cursor');
+    const fullText = typingHeading.querySelector('.sr-only')?.textContent || '';
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      textSpan.textContent = fullText;
+      if (cursor) cursor.style.display = 'none';
+    } else if (fullText) {
+      let index = 0;
+      function typeChar() {
+        if (index < fullText.length) {
+          textSpan.textContent += fullText[index];
+          index++;
+          const delay = 50 + Math.random() * 30;
+          setTimeout(typeChar, delay);
+        } else {
+          setTimeout(() => typingHeading.classList.add('typing-done'), 800);
+        }
+      }
+      typeChar();
+    }
+  }
+
   // ─── REVEAL ON SCROLL (STAGGERED) ───
 
   const revealEls = document.querySelectorAll('.reveal');
@@ -10,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const parent = entry.target.parentNode;
           const siblings = Array.from(parent.children).filter(c => c.classList.contains('reveal'));
           const index = siblings.indexOf(entry.target);
-          entry.target.style.transitionDelay = `${index * 0.1}s`;
+          entry.target.style.transitionDelay = `${index * 0.08}s`;
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1 });
 
     revealEls.forEach(el => observer.observe(el));
   }
