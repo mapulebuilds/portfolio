@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── 3D CARD TILT (ENHANCED) ───
 
-  const tiltCards = document.querySelectorAll('.skill-card, .project-card, .side-card');
+  const tiltCards = document.querySelectorAll('.skill-card, .project-card, .side-card, .cert-card');
   tiltCards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
